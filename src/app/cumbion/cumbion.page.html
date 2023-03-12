@@ -1,0 +1,58 @@
+<!-- Creacion de Header y boton de atras -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-text>Atras</ion-text>
+  </ion-toolbar>
+  </ion-header>
+  
+  <!-- 
+  Creaciion de contenedor  -->
+  <ion-content>
+    <ion-title class="navbar-title">
+      Video Viral
+    </ion-title>
+      <ion-card>
+        <video controls>
+          <source src="assets/mar.mp4">
+        </video>
+        
+        <ion-card-header>
+          <ion-card-title>"Dame tu cosita"</ion-card-title>
+          <ion-card-subtitle>El marciano que causa furor</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content class="text-ov">
+          Hay gente que todavía no tiene noticias del éxito "Dame tu cosita", un curioso fenómeno viral que ha ido creciendo a fuego lento y que hoy causa furor. Hay gente que lo ignora... pero poca. Quienes saben del caso, conocen al simpático alienígena venido de Marte que responde al nombre de "Popoy Alienígena".
+
+          La cosa viene de lejos. Concretamente, de 2015, cuando el artista panameño El Chombo creó la primera versión de este ser verde, simpático y provocador. Su ejemplo se convirtió en un reto "viral": muchos usuarios de las redes sociales eran llamados a emular el baile de "Popoy", grabarlo y colgarlo en las social media. Los ejemplos de estos "challenge" son muy variados... Y tú, ¿has ensayado el baile de moda? Te dejamos el vídeo como inspiración.
+
+
+        </ion-card-content>
+      </ion-card>
+  </ion-content>
+  
+
+  <!-- Botones Tabs para navegacion -->
+  <ion-tabs>
+    <ion-router-outlet></ion-router-outlet>
+  
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button  routerLink="/ovnis">
+        <ion-icon name="people"></ion-icon>
+        Ovnis
+      </ion-tab-button>
+  
+      <ion-tab-button  routerLink="/home">
+        <ion-icon name="home"></ion-icon>
+        Home
+      </ion-tab-button>
+  
+      <ion-tab-button  routerLink="/venta">
+        <ion-icon name="Cart"></ion-icon>
+        Venta
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>

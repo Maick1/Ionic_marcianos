@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'ovnis',
+    loadChildren: () => import('./ovnis/ovnis.module').then( m => m.OvnisPageModule)
+  },
+  {
+    path: 'cumbion',
+    loadChildren: () => import('./cumbion/cumbion.module').then( m => m.CumbionPageModule)
+  },
+  {
+    path: 'venta',
+    loadChildren: () => import('./venta/venta.module').then( m => m.VentaPageModule)
+  },
 ];
 
 @NgModule({

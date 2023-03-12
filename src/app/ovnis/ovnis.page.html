@@ -1,0 +1,64 @@
+<!-- Creacion de Header y boton de atras -->
+
+<ion-header>
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button default-href="#"></ion-back-button>
+  </ion-buttons>
+  <ion-text>Atras</ion-text>
+</ion-toolbar>
+</ion-header>
+
+<!-- 
+Creaciion de contenedor  -->
+<ion-content>
+  <ion-title class="navbar-title">
+    Ovnis Ecuador
+  </ion-title>
+    <ion-card>
+      <ion-img src="assets/icon/1.webp"></ion-img>
+      <ion-card-header>
+        <ion-card-title>¿Nos invaden los alienígenas?</ion-card-title>
+        <ion-card-subtitle>Esteban Vivar</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content class="text-ov">
+        Cuando era niño, recuerdo recostarme con mi familia para observar las estrellas durante la noche, cuando estábamos alejados de las luces de la ciudad. Al principio todo parecía relativamente estático, pero a medida que mis ojos se acostumbraban a la oscuridad de la noche podía ver, cada vez más, que existía movimiento. Ya sea en forma de cometas o el brillo que irradiaban las estrellas a millones de años luz de distancia. Y mientras esto pasaba, lentamente crecían en mí las ganas de ver un objeto que no se moviera de forma “natural”, que rompiera con esa normalidad para poder tener una prueba, de primera mano, de que existían habitantes de otro planeta y que se encontraban aquí. Pero, lamentablemente, esto nunca pasó. 
+
+        Sin embargo, no es disparatado pensar que pudiera haber vida fuera de la Tierra. Solo en nuestra galaxia se estima que existen 300 millones de planetas que tendrían las condiciones para ser habitables. Y debido a estas gigantescas posibilidades, la raza humana nunca perdió la esperanza de que algún día podríamos hacer contacto con otra especie. Es por ello que, en 1977, la NASA lanzó al espacio exterior dos discos fonográficos de cobre bañado en oro que contenían sonidos e imágenes que retrataban la diversidad de la vida y la cultura en la Tierra. Se diseñaron con el objetivo de dar a conocer la existencia de nuestro mundo a alguna posible forma de vida extraterrestre inteligente que los encontrara, y que además tuviera la capacidad de leerlos, entenderlos y descifrarlos.
+
+        Debido a que el gobierno ecuatoriano no ha abierto una rama oficial para estudiar este tipo de fenómenos y para no caer en el campo de la especulación, este tema se tratará sobre la evidencia empírica generada por el gobierno de los Estados Unidos. Gracias a una investigación realizada por el New York Times, se conoce que el Pentágono ha investigado el fenómeno de los Objetos Voladores No Identificados (OVNIS) o como ahora los llaman “Fenómenos Aéreos no Identificados” (UAPS por sus siglas en inglés), desde al menos 2007. Pero su principal objetivo no es encontrar razas alienígenas, sino prepararse en contra de tecnología avanzada de países enemigos.
+
+        Hace unos días, la Oficina del Director Nacional de Inteligencia de EE.UU. liberó el reporte anual de UAPS, que indica que existieron 366 nuevos reportes de avistamientos en 2022, asegurando que alrededor de la mitad de los casos se deben a fenómenos climáticos, drones y entidades en forma de globo. Pero, 171 reportes se mantienen sin una respuesta clara, aunque se detaca que tienen caraterísticas de vuelo inusual, lo que demanda una investigación más amplia en conjunto con sus países aliados. En pocas palabras, no saben qué son. 
+
+        Esto ahonda la preocupación de que a lo largo de la última semana se han reportado cuatro derribamientos de UAPS dentro del espacio aéreo estadounidense y canadiense.
+
+        El primer objeto fue un globo destruido frente a la costa de Carolina del Sur el 4 de febrero, el cual se alega era una herramienta espía del gobierno chino. El viernes, un segundo objeto fue derribado sobre hielo marino cerca de Deadhorse, Alaska. Un tercer objeto fue abatido el sábado sobre el Yukón de Canadá, con los investigadores aún buscando los restos. Y un cuarto objeto volador se destruyó el domingo sobre el lago Huron en Michigan. Los testigos de este último aseguran que tenía una estructura octogonal, con cuerdas colgando, pero sin una carga perceptible. 
+
+        Esto podría derivar en dos hipótesis: 
+
+        La primera sería que efectivamente se trate de una nave extraterrestre, en cuyo caso demostramos un rasgo extremadamente hostil al haberlo derribado. Exponiendo que somos una especie que actúa antes de pensar frente a lo desconocido. Y a la vez probaría que la civilización que la creó, no tuvo la capacidad de defenderse de un misil humano, hecho que no parece muy factible debido a la avanzada capacidad tecnológica que se necesitaría para realizar el viaje hasta aquí. 
+      </ion-card-content>
+    </ion-card>
+</ion-content>
+
+<!-- Botones Tabs para navegacion -->
+<ion-tabs>
+  <ion-router-outlet></ion-router-outlet>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button  routerLink="/cumbion">
+      <ion-icon name="play-circle"></ion-icon>
+      Cumbion
+    </ion-tab-button>
+
+    <ion-tab-button  routerLink="/home">
+      <ion-icon name="home"></ion-icon>
+      Home
+    </ion-tab-button>
+
+    <ion-tab-button  routerLink="/venta">
+      <ion-icon name="Cart"></ion-icon>
+      Venta
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

@@ -1,20 +1,45 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<!-- Header de navbar -->
+<ion-header>
+  <ion-toolbar class="navbar">
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-button class="navbar-button" routerLink="/ovnis">
+      Ovnis
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-button class="navbar-button" routerLink="/cumbion">
+        Cumbion
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button class="navbar-button" routerLink="/venta">
+        <ion-icon name="cart"></ion-icon>
+        <span class="cart-badge">5</span>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+<!-- Contenedor Navbar -->
+<ion-content>
+  <ion-title class="navbar-title">
+    <u>Pagina Principal</u>
+  </ion-title>
+
+  <!-- Poner Imagen  -->
+  <ion-item>
+    <img src="assets/icon/ovni.jpg">
+  </ion-item>
+  <ion-list>
+    
+    <ion-item>
+      <ion-label> </ion-label>
+      Bienvenido a la pagina de los Ovnis :3
+    </ion-item>
+  </ion-list>
 </ion-content>
+

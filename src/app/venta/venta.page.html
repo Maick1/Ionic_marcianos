@@ -1,0 +1,53 @@
+<!-- Creacion de Header y boton de atras -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-text>Atras</ion-text>
+  </ion-toolbar>
+  </ion-header>
+  
+  <!-- 
+  Creaciion de contenedor  -->
+  
+  <ion-content>
+    <ion-title class="navbar-title">
+      Galeria Ovnis
+    </ion-title>
+    <table class="img">
+      <tr>
+        <td><img src="assets/icon/pl1.jpg"></td>
+        <td><img src="assets/icon/pl2.jpg"></td>
+        <td><img src="assets/icon/pl3.webp"></td>
+      </tr>
+      <tr>
+        <td><img src="assets/icon/pl4.jpg"></td>
+        <td><img src="assets/icon/pl6.webp"></td>
+        <td><img src="assets/icon/pl8.jpg"></td>
+      </tr>
+    </table>
+  </ion-content>
+  
+  
+  <!-- Botones Tabs para navegacion -->
+  <ion-tabs>
+    <ion-router-outlet></ion-router-outlet>
+  
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button  routerLink="/cumbion">
+        <ion-icon name="play-circle"></ion-icon>
+        Cumbion
+      </ion-tab-button>
+  
+      <ion-tab-button  routerLink="/home">
+        <ion-icon name="home"></ion-icon>
+        Home
+      </ion-tab-button>
+  
+      <ion-tab-button  routerLink="/venta">
+        <ion-icon name="Cart"></ion-icon>
+        Venta
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
